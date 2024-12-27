@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Firebase Admin SDK Setup
-const serviceAccount = require('./firebase.json'); // Download your Firebase service account key from the Firebase console
+const serviceAccount = require('/firebase.json'); // Download your Firebase service account key from the Firebase console
 
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(serviceAccount),
